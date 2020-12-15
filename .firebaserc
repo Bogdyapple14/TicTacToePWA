@@ -1,9 +1,9 @@
 {
   "targets": {
-    "vue22axios": {
+    "tic-tac-toe-pwa-163f5": {
       "hosting": {
         "TicTacToePWA": [
-          "vue22axios"
+          "tic-tac-toe-pwa-163f5"
         ]
       }
     }
