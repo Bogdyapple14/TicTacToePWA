@@ -20,7 +20,10 @@ export class BoardComponent implements OnInit {
   // Everytime we begin a new game, we empty the board, the winner and we begin with X
   newGame() {
     this.winner = null;
-    this.xIsNext = true;
+    // Takes a random 1 digit number, divides it by 5. If it's > 1, X begins, else, O begins
+    Math.floor(Math.random() * 10) / 5 > 1
+      ? (this.xIsNext = true)
+      : (this.xIsNext = false);
     this.squares = Array(9).fill(null);
   }
 
