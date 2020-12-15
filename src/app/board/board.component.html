@@ -1,9 +1,9 @@
-<!-- Shows only if winner != null -->
-<h1 *ngIf="winner" class="winner">
-  Player <span class="winnerName">{{ winner }}</span> won the game
-</h1>
+<div class="upperSection">
+  <button class="newGame" (click)="newGame()">New Game</button>
+  <h1>Player's Turn: {{ player }}</h1>
+</div>
 <div id="board">
-  <!-- We generate the app square as many times as there are squares ( 9 ). -->
+  <!-- We generate the app-square as many times as there are squares ( 9 ). -->
   <!-- We add the makeMove(index) event on click -->
   <!-- We also tell our child component that the value of squareValue is the value of square -->
   <app-square
@@ -13,7 +13,7 @@
     [ngClass]
   ></app-square>
 </div>
-<div class="bottomSection">
-  <button class="newGame" (click)="newGame()">New Game</button>
-  <h1>Player's Turn: {{ player }}</h1>
-</div>
+<h1 *ngIf="winner" class="winner">
+  <!-- Shows only if winner != null -->
+  Amazing, <span class="winnerName">{{ winner }}</span> won the game
+</h1>

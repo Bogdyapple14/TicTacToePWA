@@ -42,6 +42,12 @@ export class BoardComponent implements OnInit {
     }
     // Everytime we  make a move, we also calculate to see if someone won, if true, we return the value which won
     this.winner = this.calculateWinner();
+    const tableIsFull: boolean = this.squares.every((square) => {
+      return square != null;
+    });
+    if (tableIsFull && !this.winner) {
+      this.winner = 'NOBODY';
+    }
   }
 
   // An algorithm used to decide if someone won, based on the winning moves and the boards' squares

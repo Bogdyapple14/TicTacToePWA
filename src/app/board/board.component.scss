@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 150px 150px;
+  position: relative;
 }
-.bottomSection {
+.upperSection {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -19,6 +20,7 @@
   color: white;
   font-weight: 600;
   font-size: 32px;
+  margin: 10px 0;
   letter-spacing: 10px;
   .winnerName {
     color: #0078a0;
