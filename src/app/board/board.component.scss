@@ -26,3 +26,39 @@
     color: #0078a0;
   }
 }
+
+@media (max-width: 700px) {
+  .winner {
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 460px) {
+  #board {
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 30vw 30vw 30vw;
+  }
+  .upperSection {
+    width: 100%;
+    h1 {
+      font-size: 24px;
+    }
+    .newGame {
+      font-size: 24px;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .upperSection {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .newGame {
+    width: 80%;
+  }
+  .winner {
+    font-weight: 500;
+  }
+}

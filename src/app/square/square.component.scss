@@ -22,3 +22,8 @@ button {
 .is-Null {
   background: #c9e7ff;
 }
+@media (max-width: 400px) {
+  button {
+    font-size: 50px;
+  }
+}
