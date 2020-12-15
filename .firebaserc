@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vue22axios": {
+      "hosting": {
+        "TicTacToePWA": [
+          "vue22axios"
+        ]
+      }
+    }
+  }
+}

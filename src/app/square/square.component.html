@@ -1,0 +1,11 @@
+<!-- Every button gets it's value from the parent component (we used input to export this as a prop) -->
+<!-- The value is declared and modified in board.component but displayed in square.component, that's why we need to export it as a prop -->
+<button
+  [ngClass]="{
+    'is-X': squareValue === 'X',
+    'is-O': squareValue === 'O',
+    'is-Null': squareValue === null
+  }"
+>
+  {{ squareValue }}
+</button>

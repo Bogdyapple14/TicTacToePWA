@@ -1,0 +1,26 @@
+#board {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+}
+.bottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 450px;
+  h1 {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+  }
+}
+.winner {
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 10px;
+  .winnerName {
+    color: #0078a0;
+  }
+}
